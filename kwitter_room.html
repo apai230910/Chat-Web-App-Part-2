@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>CHAT Room</title>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+ <link rel="stylesheet" href="kwitter_room.css">
+ <script src="kwitter_room.js"></script>
+</head>
+
+<body>
+<br>
+<button id="log_out" onclick="logout()" class="btn btn-danger" style="float: right;margin-right: 10px;"><span class="glyphicon glyphicon-log-out"></span>&nbsp;&nbsp;Logout</button>
+<br><br>
+<center>
+ <h2 style="color: white;">
+  Chat Web App
+  <sup>
+   <img src="icon.svg" style="height: 70px;margin-top: 10px;">
+  </sup>
+ </h2>
+ <br>
+ <label>#Add Room Name</label>
+ <br><br>
+ <input type="text" id="room_name" class="form-control" placeholder="Add Room Name" style="width:50%;">
+ <br><br>
+
+ <button class="btn btn-info" style="border: 2px solid black;" onclick="add()">Create Room</button>
+</center>
+
+</body>
+
+</html>
